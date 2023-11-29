@@ -635,8 +635,22 @@ footer a {
                 margin-right: 20px; 
                
             }
+            /* About Section */
+            #about {
+                display: flex;
+                flex-direction: row; 
+                justify-content: space-between;
+                flex-wrap: nowrap; }
         
+            #about section {
+                display: inline-block;
+                width: 20%;
+                box-sizing: border-box;
+                padding-right: 200px;
+                margin-right: 50px; 
+            }
          
+
                /* Footer Styles */
     footer {
         display: flex;
