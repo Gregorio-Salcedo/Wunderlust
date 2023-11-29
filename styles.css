@@ -503,7 +503,7 @@ footer a {
         box-sizing: border-box;
         margin-bottom: 20px;
     }
-    /* Footer Styles */
+    /* Footer Tablet Styles */
     footer {
         display: flex;
         justify-content: space-between;
@@ -587,8 +587,8 @@ footer a {
         text-decoration: none;
         color: var(--black);
     }
-    
-        /* Intro Section */
+    /*  Desktop Section Styles */
+        /* Intro Desktop Section */
         #intro {
             display: flex;
             align-items: flex-start;
@@ -604,7 +604,7 @@ footer a {
         #intro p {
             margin: 50px;
         }
-               /* Plan Section */
+        /* Plan Desktop Section */
        #plan {
         display: flex;
         flex-direction: row; 
@@ -621,7 +621,7 @@ footer a {
         margin: 0 auto; 
     }
         
-            /* Testimonials Section */
+            /* Testimonials Desktop Section */
             #testimonials {
                 display: flex;
                 flex-direction: row; 
@@ -637,7 +637,7 @@ footer a {
                 margin-right: 20px; 
                
             }
-            /* About Section */
+            /* About Desktop Section */
             #about {
                 display: flex;
                 flex-direction: row; 
@@ -652,7 +652,7 @@ footer a {
                 margin: 0 auto; 
                 
             }
-               /* Contact Form */
+               /* Contact Desktop Form */
                #contact form {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
@@ -679,7 +679,7 @@ footer a {
                 height: 80%;
                 padding: 20px;
             }
-               /* Footer Styles */
+               /* Footer Desktop Styles */
     footer {
         display: flex;
         justify-content: space-between;
