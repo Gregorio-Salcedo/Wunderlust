@@ -604,7 +604,20 @@ footer a {
         #intro p {
             margin: 50px;
         }
-        
-        
+               /* Plan Section */
+       #plan {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;
+        flex-wrap: nowrap; 
+    }
+    
+    #plan section {
+        display: inline-block;
+       width: 20%;
+        box-sizing: border-box;
+        padding-right: 150px;
+    }
+       
 }
 
