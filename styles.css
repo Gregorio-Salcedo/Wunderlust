@@ -503,6 +503,18 @@ footer a {
         box-sizing: border-box;
         margin-bottom: 20px;
     }
+    /* Footer Styles */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        background-color: var(--light-gray);
+        color: var(--dark-gray);
+    }
+    
+
 }
 
 
@@ -537,6 +549,7 @@ footer a {
         text-align: left; 
         margin-top: 50px; 
     }
+   
 /* Nav Desktop Styles */
     nav {
         grid-column: 2;
@@ -574,6 +587,25 @@ footer a {
         text-decoration: none;
         color: var(--black);
     }
-    /* Section Desktop Styles */
     
-}
+        /* Intro Section */
+        #intro {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            text-align: left;
+        }
+        
+        #intro h2 {
+            position: fixed;
+            margin-left: 50px; 
+        }
+        
+        #intro p {
+            margin: 50px;
+
+        }
+        
+        
+    }
+
