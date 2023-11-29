@@ -1,4 +1,5 @@
 /* Gregorio Salcedo */
+
 /* Reset Code */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -47,4 +48,275 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+/* Mobile First display */
+
+/* Import Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/* Variables */
+:root {
+    --yellow: #F6D64A;
+    --teal: #55BCD5;
+    --purple: #9B26B0;
+    --blue: #499BD2;
+    --dark-gray: #222222;
+    --light-gray: #EAEAEA;
+    --white: #FFFFFF;
+    --black: #000000;
+    --montserrat: 'Montserrat', sans-serif;
+}
+
+/* Global Styles */
+
+body {
+    font-family: var(--montserrat);
+    line-height: 1.6;
+    color: var(--black);
+    background-image: linear-gradient(var(--teal)2%, var(--white)5%);
+
+}
+
+/* Header Styles */
+header {
+  
+    color: var(--black);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img {
+    max-width: 100%;
+}
+
+
+/* Typography Styles */
+h1, h2, h3, h4 {
+    font-family: var(--montserrat);
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    align-items: center;
+    
+}
+a{
+    text-decoration: none;
+   
+}
+#menu-toggle {
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#toggle {
+    display: none;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+label[for="toggle"] {
+    cursor: pointer;
+    padding: 10px;
+    background-color: var(--yellow);
+    color: var(--black);
+    border-radius: 5px;
+}
+
+#toggle:checked + label[for="toggle"] {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+#toggle:checked + label[for="toggle"] + ul {
+    display: flex;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Section Styles */
+#plan{
+    background-color: var(--yellow);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#plan section{
+    display: block;
+    background-color: var(--teal);
+    padding: 30px;
+    margin: 20px;
+    border-style:solid;
+    border-radius: 5%;
+    border-color: var(--white);
+    border-width: 3px;
+    text-align: center;
+}
+#testimonials{
+    background-color: var(--white);
+    padding: 30px;
+    margin: 20px;
+    border-style:solid;
+    border-radius: 5%;
+    border-color: var(--white);
+    border-width: 3px;
+    text-align: center;
+}
+#testimonials section{
+   display: inline-block;
+    padding: 10px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    }
+#contact {
+    background-color: var(--white);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#about {
+    
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 20px;
+    color: var(--black);
+}
+#about section{
+display: inline-block;
+padding: 10px;
+margin: 5px;
+text-align: center;
+}
+
+/* Form Styles */
+form input[type="radio"] {
+    width: 50px;
+    height: 50px;
+    appearance: none;
+    border-radius: 50%;
+    border: 3px solid var(--purple);
+    margin-right: 10px;
+    outline:invert;
+}
+form input[type="radio"]:checked {
+    background-color: var(--purple);
+
+}
+
+form label {
+    display: flex;
+    align-items: center;
+    color: var(--black);
+    padding: 10px;
+    padding-right: 20px; 
+    margin: 10px;
+}
+
+
+form input[type="submit"] {
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 20px;
+    margin-top: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 3px solid var(--purple);
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+/* Additional Styles for Form Elements */
+.custom-select {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.custom-select select {
+    width: 100%;
+    padding: 15px;
+    border: 3px solid var(--purple);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    body {
+        overflow-x: hidden; 
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--teal);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul li {
+        margin: 0;
+        text-align: center;
+    }
+
+    #toggle:checked + ul {
+        display: flex;
+    }
+}
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 50px;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+}
+
+footer a {
+    margin: 100px;
+    color: var(--dark-gray);
+    text-decoration: none;
 }
