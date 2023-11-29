@@ -74,33 +74,47 @@ body {
     line-height: 1.6;
     color: var(--black);
     background-image: linear-gradient(var(--teal)2%, var(--white)5%);
-
 }
 
 /* Header Styles */
 header {
     color: var(--black);
     padding: 1rem;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 2fr; 
+    grid-template-areas: "logo nav "; 
     align-items: center;
 }
 
-#logo img {
-    max-width: 100%;
+h1, p {
+    margin: 10px; 
+    grid-column: span 2; 
 }
-
 
 /* Typography Styles */
 h1, h2, h3, h4 {
     font-family: var(--montserrat);
 }
 
+/* Additional Styles for Header */
+header h1 {
+    font-size: 2rem;
+    color: var(--black);
+   
+}
+
+header p {
+    font-size: 1rem; 
+    color: var(--dark-gray); 
+}
+
+
 /* Navigation Styles */
 nav {
     display: flex;
     align-items: center;
-    
+    justify-content: flex-end; 
+    grid-area: nav; 
 }
 
 #menu-toggle {
@@ -316,7 +330,6 @@ form select {
         left: 0;
         width: 100%;
         background-color: var(--teal);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     }
 
   
@@ -324,6 +337,7 @@ form select {
         display: flex;
         
     }
+    
 }
 /* Footer Styles */
 footer {
