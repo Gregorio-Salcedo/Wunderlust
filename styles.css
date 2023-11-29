@@ -459,6 +459,32 @@ footer a {
         text-decoration: none;
         color: var(--black);
     }
+
+    #plan div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+
+    #plan section {
+        width: 38%; 
+        box-sizing: border-box;
+        margin-bottom: 80px;
+    }
+
+   
+    #testimonials div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #testimonials section {
+        width: 48%; 
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
 }
 
 
