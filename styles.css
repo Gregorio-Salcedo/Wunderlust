@@ -235,14 +235,14 @@ main {
 }
 
 #about {
-    
+  
     background-color: var(--blue);
     color: var(--white);
     padding: 20px;
     color: var(--black);
 }
 #about section{
-display: inline-block;
+ display: inline-block;
 padding: 10px;
 margin: 5px;
 text-align: center;
