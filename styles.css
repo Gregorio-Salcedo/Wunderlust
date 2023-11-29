@@ -75,6 +75,17 @@ body {
     color: var(--black);
     background-image: linear-gradient(var(--teal)2%, var(--white)5%);
 }
+body h2{
+   font-size: 35px;  
+}
+body h3{
+    font-size: 30px;
+    
+}
+body h4{
+    font-size: 25px;
+    font-weight: bolder; 
+}
 
 /* Header Styles */
 header {
@@ -86,9 +97,24 @@ header {
     align-items: center;
 }
 
+#testimonials p, q{
+    color: var(--dark-gray);
+    font-style:italic;
+    font-weight: lighter;
+}
+
+#testimonials q::before {
+    content: '\201C'; 
+}
+
+#testimonials q::after {
+    content: '\201D'; 
+}
+
 h1, p {
     margin: 10px; 
     grid-column: span 2; 
+   
 }
 
 /* Typography Styles */
@@ -98,7 +124,7 @@ h1, h2, h3, h4 {
 
 /* Additional Styles for Header */
 header h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--black);
    
 }
