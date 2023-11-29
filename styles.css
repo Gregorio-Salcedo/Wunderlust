@@ -597,7 +597,7 @@ footer a {
         }
         
         #intro h2 {
-            position: fixed;
+            position: absolute;
             margin-left: 50px; 
         }
         
