@@ -671,6 +671,11 @@ footer a {
                 width: auto;
                 justify-self: flex-start; 
             }
+            #contact form input[type="radio"] {
+                width: 80%;
+                height: 80%;
+                padding: 20px;
+            }
                /* Footer Styles */
     footer {
         display: flex;
