@@ -610,6 +610,7 @@ footer a {
         flex-direction: row; 
         justify-content: space-between;
         flex-wrap: nowrap; 
+        padding: 40px;
     }
     
     #plan section {
@@ -617,6 +618,7 @@ footer a {
        width: 20%;
         box-sizing: border-box;
         padding-right: 150px;
+        margin: 0 auto; 
     }
         
             /* Testimonials Section */
@@ -647,7 +649,8 @@ footer a {
                 width: 20%;
                 box-sizing: border-box;
                 padding-right: 200px;
-                margin-right: 50px; 
+                margin: 0 auto; 
+                
             }
                /* Contact Form */
                #contact form {
