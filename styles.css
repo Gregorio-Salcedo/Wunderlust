@@ -618,6 +618,37 @@ footer a {
         box-sizing: border-box;
         padding-right: 150px;
     }
-       
+        
+            /* Testimonials Section */
+            #testimonials {
+                display: flex;
+                flex-direction: row; 
+                justify-content: space-between;
+                flex-wrap: nowrap; 
+            }
+            
+            #testimonials section {
+                display: inline-block;
+                width: 20%;
+                box-sizing: border-box;
+                padding-right: 20px; 
+                margin-right: 20px; 
+               
+            }
+        
+         
+               /* Footer Styles */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        background-color: var(--light-gray);
+        color: var(--dark-gray);
+    }
+    
+
+        
 }
 
