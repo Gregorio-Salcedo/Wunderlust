@@ -133,7 +133,9 @@ header p {
     font-size: 1rem; 
     color: var(--dark-gray); 
 }
-
+#skip{
+    visibility: hidden;
+}
 
 /* Navigation Styles */
 nav {
@@ -163,13 +165,15 @@ display: block;
 }
 
 label[for="toggle"] {
+   
     cursor: pointer;
     padding: 10px;
     background-color: var(--yellow);
     color: var(--black);
     border-radius: 5px;
-    
+    transition: background-color 1.3s ease-in-out, color 1.3s ease-in-out;
 }
+
 #toggle:checked + label[for="toggle"] {
     display: flex;
     flex-direction: column;
@@ -291,15 +295,12 @@ form input[type="radio"]:checked {
 
 form label {
     display: flex;
-    align-items: center;
-    color: var(--black);
-    padding: 10px;
-    padding-right: 20px; 
-    margin: 10px;
+
 }
 
 
 form input[type="submit"] {
+    width: 100%;
     background-color: var(--purple);
     color: var(--white);
     padding: 20px;
@@ -335,7 +336,15 @@ form select {
     border-radius: 5px;
     cursor: pointer;
 }
-
+.required{
+    color: var(--purple);
+}
+.form-required{
+    color: var(--dark-gray);
+    font-style: italic;
+    font-weight: lighter;
+    font-size: medium;
+}
 
 
 
